@@ -5,7 +5,7 @@ Note: this repo doesn't cover how to get the `gho_<TOKEN>` token!
 # Motivation
 VSCode doesn't really support multiple github accounts at all. One account per VSCode instance (under the same machine). So I decided to look for an approach on how to use GitHub Copilot without messing my configuration. If you mess your GitHub Copilot extension you can reinstall it, no problem.
 
-# How to do that
+# How to do that (Windows)
 Go to:
 ```js
 %userprofile%\.vscode\github.copilot-<VERSION>\dist\extension.js
@@ -18,6 +18,8 @@ with =>
 ```js
 ,new Pc("GitHubLoginFailed")}n.accessToken="gho_<TOKEN>";
 ```
+
+For different OS, like Linux and MacOS should be similar.
 
 When the GitHub Copilot trials expires or GitHub Copilot VSCode extension gets updated, you have to repeat this process (kinda).
 
