@@ -12,11 +12,11 @@ Go to:
 ```
 and replace:
 ```js
-,new Pc("GitHubLoginFailed")}
+"GitHubLoginFailed")}
 ```
 with =>
 ```js
-,new Pc("GitHubLoginFailed")}n.accessToken="gho_<TOKEN>";
+"GitHubLoginFailed")}n.accessToken="gho_<TOKEN>";
 ```
 
 For different OS, like Linux and MacOS should be similar.
