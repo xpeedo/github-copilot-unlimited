@@ -19,6 +19,19 @@ with =>
 "GitHubLoginFailed")}n.accessToken="gho_<TOKEN>";
 ```
 
+For GitHub Copilot Chat you have to do this:
+```js
+%userprofile%\.vscode\extensions\github.copilot-chat-<VERSION>\dist\extension.js
+```
+and replace:
+```js
+{token:r.accessToken});return
+```
+with =>
+```js
+{token:"gho_<TOKEN>"});return
+```
+
 For different OS, like Linux and MacOS should be similar.
 
 When the GitHub Copilot trials expires or GitHub Copilot VSCode extension gets updated, you have to repeat this process (kinda).
